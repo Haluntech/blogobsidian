@@ -151,49 +151,30 @@ const ExtendedTheme: Theme = {
     
     // Obtain configuration from: https://giscus.app/
     giscusTalk({
-      repo: 'Jackiexiao/nolebase-template',
-      repoId: 'R_kgDOL5WHsg',
-      category: 'Announcements', // default: `General`
-      categoryId: 'DIC_kwDOL5WHss4CfTYs',
-      mapping: 'url', // default: `pathname`
-      inputPosition: 'top', // default: `top`
-      lang: 'zh-CN', // default: `zh-CN`
-      // i18n setting (Note: This configuration will override the default language set by lang)
-      // Configured as an object with key-value pairs inside:
-      // [your i18n configuration name]: [corresponds to the language pack name in Giscus]
+      repo: 'Haluntech/blogobsidian',
+      repoId: 'R_kgDOPQMJjQ',
+      category: 'General',
+      categoryId: 'DIC_kwDOPQMJjc4CtPeP',
+      mapping: 'title',
+      strict: '0',
+      reactionsEnabled: '1',
+      emitMetadata: '1',
+      inputPosition: 'top',
+      theme: 'purple_dark',
+      lang: 'zh-CN',
+      loading: 'lazy',
+      // i18n setting
       locales: {
           'zh-Hans': 'zh-CN',
           'en-US': 'en'
       },
-      homePageShowComment: false, // Whether to display the comment area on the homepage, the default is false
-      lightTheme: 'light', // default: `light`
-      darkTheme: 'transparent_dark', // default: `transparent_dark`
-      // ...
+      homePageShowComment: false,
+      lightTheme: 'purple_dark',
+      darkTheme: 'purple_dark',
     }, {
       frontmatter, route
-    },
-      // Whether to activate the comment area on all pages.
-      // The default is true, which means enabled, this parameter can be ignored;
-      // If it is false, it means it is not enabled.
-      // You can use `comment: true` preface to enable it separately on the page.
-      true
-    );
+    }, true);
   }
-}
-<script src="https://giscus.app/client.js"
-        data-repo="Haluntech/blogobsidian"
-        data-repo-id="R_kgDOPQMJjQ"
-        data-category="General"
-        data-category-id="DIC_kwDOPQMJjc4CtPeP"
-        data-mapping="title"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="1"
-        data-input-position="top"
-        data-theme="purple_dark"
-        data-lang="zh-CN"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
+};
+
 export default ExtendedTheme
