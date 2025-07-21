@@ -180,5 +180,20 @@ const ExtendedTheme: Theme = {
     );
   }
 }
-
+<script src="https://giscus.app/client.js"
+        data-repo="Haluntech/blogobsidian"
+        data-repo-id="R_kgDOPQMJjQ"
+        data-category="General"
+        data-category-id="DIC_kwDOPQMJjc4CtPeP"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="1"
+        data-input-position="top"
+        data-theme="purple_dark"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
 export default ExtendedTheme
